@@ -7,7 +7,7 @@ MARS (fork of a fork) MIPS Assembler and Runtime Simulator
  The MARS-LE fork of MARS is a research project undertaken by John Edelman, Jun Law, and Dominic Dabish in summer 2025, aiming to modernize MARS and specifically to enable students to specify their own custom assembly languages for use with the MARS simulator.
 
 ## Espionage Assembly:
-Espionage Assembly is a custom MIPS-like assembly language implemented
+Espionage Assembly is an Espionage-themed custom MIPS-like assembly language implemented
 using MARS-LE.
 ## Instructions in Espionage Assembly:
 - `eqp $t0, 100` – **Equip:** Equip register with a value (Assign value to register: set $t0 to signed 16-bit immediate)
@@ -36,3 +36,11 @@ using MARS-LE.
 - `fea $t1` – **Flip Enemy Agent:** flip the sign of the value in `$t1`
 - `ii $t1` – **Intercept Intel:** Intercept a number (input) from the console and store it in `$t1`
 - `terminated` – **Terminated:** Your cover was blown, and now you (the program) gets terminated
+
+## How to Use it
+If you've downloaded/cloned/forked this version of MAR-LE, all you should have to do is click on the Mars.jar 
+file and open up MARS-LE. Then go to **Tools** → **Language Switcher** → **Espionage Assembly**.
+After that you can start writing in the assembly and it should work.  
+If you've downloaded/cloned/forked the original MARS-LE, you'll need to copy and paste the 
+**EspionageAssembly.java** and **EspionageAssembly.jar** files into the "mars/mips/instructions/customlangs" 
+folder. After that follow the above steps and it should work.
